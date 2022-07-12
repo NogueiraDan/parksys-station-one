@@ -8,4 +8,4 @@
 
 ## 2- OBS: A aplicação usa o MongoDB local, então é necessário ter instalado na máquina.
 
-## 3- Os documentos das coleções devem ter os mesmo campos dos models
+## 3- Os documentos das coleções devem ter os mesmos campos dos models
