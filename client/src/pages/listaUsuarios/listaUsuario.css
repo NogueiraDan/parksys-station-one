@@ -1,0 +1,18 @@
+.list-users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#btn-list {
+  margin: 0 auto;
+}
+
+.main-content {
+  color: white;
+}
+
+#btn-searchUser {
+  display: flex;
+  margin: 0 auto;
+}
