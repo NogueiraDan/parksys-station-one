@@ -9,3 +9,5 @@
 ## 2- OBS: A aplicação usa o MongoDB local, então é necessário ter instalado na máquina.
 
 ## 3- Os documentos das coleções devem ter os mesmos campos dos models
+
+## 4 - O nome do banco deve ser conforme configurado no arquivo de conexão. 
