@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./listaUsuario.css";
 import Button from "react-bootstrap/Button";
 import Table from "react-bootstrap/Table";
@@ -16,6 +17,7 @@ const ListaUsuarios = () => {
     setOneUser([{}]);
   };
   const handleShow = () => setShow(true);
+  const navigate = useNavigate();
 
   const getUsers = async () => {
     axios
@@ -39,10 +41,13 @@ const ListaUsuarios = () => {
         setOneUser(res.data.data.user);
         console.log("Usuário:");
         console.log(oneUser);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+        if(res.data.data.user===null){
+          alert('Usuário não encontrado')
+          navigate("/");
+          
+        }
+      })     
+   
   };
 
   return (
